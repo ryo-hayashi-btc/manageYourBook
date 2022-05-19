@@ -1,1 +1,37 @@
 2022-05-19 12:17:04,284 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-19 19:12:03,630 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-05-19 20:31:19,928 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-19 20:34:33,869 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-19 20:37:35,270 [Worker-12: Installing artifact] ERROR o.e.m.c.u.i.w.MavenInstallFileWizard - Execution error; org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal [32morg.apache.maven.plugins:maven-install-plugin:2.4:install-file[m [1m(default-cli)[m on project [36mstandalone-pom[m: [1;31mThe artifact information is incomplete or not valid:
+  [0]  'groupId' is missing.
+  [1]  'artifactId' is missing.
+  [2]  'packaging' is missing.
+[m
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal [32morg.apache.maven.plugins:maven-install-plugin:2.4:install-file[m [1m(default-cli)[m on project [36mstandalone-pom[m: [1;31mThe artifact information is incomplete or not valid:
+  [0]  'groupId' is missing.
+  [1]  'artifactId' is missing.
+  [2]  'packaging' is missing.
+[m
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81) ~[na:na]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192) ~[na:na]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:287) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenInstallFileWizard$1.run(MavenInstallFileWizard.java:110) ~[org.eclipse.m2e.core.ui_1.14.0.20191209-1925.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.600.v20191122-2104.jar:na]
+Caused by: org.apache.maven.plugin.MojoExecutionException: The artifact information is incomplete or not valid:
+  [0]  'groupId' is missing.
+  [1]  'artifactId' is missing.
+  [2]  'packaging' is missing.
+
+	at org.apache.maven.plugin.install.InstallFileMojo.validateArtifactInformation(InstallFileMojo.java:386) ~[na:na]
+	at org.apache.maven.plugin.install.InstallFileMojo.execute(InstallFileMojo.java:207) ~[na:na]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210) ~[na:na]
+	... 12 common frames omitted
